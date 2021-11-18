@@ -297,7 +297,7 @@ export default {
           CommunityRewardsDAOApproveContractAddress,
           this.web3
         )
-          .methods.release(releaseAmount)
+          .methods.getReward(releaseAmount)
           .send({ from: this.address })
           .then(() => {
             this.loading = false;
